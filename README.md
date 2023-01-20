@@ -1,4 +1,4 @@
-## Assignment 6
+## Web-based Visualizations of the Covid-19 Datasets by Folkehelseinstituttet
 The assignment is based around building a web-based visualization of the covid-19 datasets by Folkehelseinstituttet (FHI). The user has a choice between interacting with a web-based service or a terminal program. The data can be limited to counties and time-range. 
 
 The names of the data-files (.csv) are not modified for the assignment, so if more recent datasets are wanted, download them and replace the files in the reported_cases folder.
