@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.8.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+
+  <div class="header">
+    <div class="header-left">
+      <a class="active" href="/">Graf</a>
+      <a href="/map">Kart</a>
+      <a href="/help">Hjelp</a>
+    </div>
+  </div>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+
+</head>
+<body>
+
+  <form action="/county" method="POST">
+  <!--form onsubmit="return submitForm()" id="form"-->
+    <p></p>
+    <label for="county-dropdown">Vis for fylke</label>
+
+    <select name="county" id="county-dropdown" onchange="this.form.submit()">    
+    <!--select name="county" id="county-dropdown"-->
+      <option selected="selected" value="all">Alle fylker</option>
+      <option value="(1)">Asker</option>
+      <option value="(2)">Innlandet</option>
+      <option value="(3)">Møre og Romsdal</option>
+      <option value="(4)">Nordland</option>
+      <option value="(5)">Oslo</option>
+      <option value="(6)">Rogaland</option>
+      <option value="(7)">Troms og Finnmark</option>
+      <option value="(8)">Trøndelag</option>
+      <option value="(9)">Vestfold og Telemark</option>
+      <option value="(10)">Vestland</option>
+      <option value="(11)">Viken</option>
+    </select>
+
+  </form>
+
+  <div id="vis"></div>
+
+  <script>
+
+    (async function(vegaEmbed) {
+      
+      var response = await fetch("graph.json")
+      var spec =await response.json()
+
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

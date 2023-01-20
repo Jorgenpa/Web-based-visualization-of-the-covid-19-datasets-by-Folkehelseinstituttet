@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module web_visualization</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>web_visualization</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cadmin%5Cdocuments%5Cin3110-jorgenpa%5Cassignment6%5Cweb_visualization.py">c:\users\admin\documents\in3110-jorgenpa\assignment6\web_visualization.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="altair.html">altair</a><br>
+<a href="io.html">io</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+<a href="pandas.html">pandas</a><br>
+</td><td width="25%" valign=top><a href="pydoc.html">pydoc</a><br>
+<a href="shutil.html">shutil</a><br>
+</td><td width="25%" valign=top><a href="sys.html">sys</a><br>
+<a href="tempfile.html">tempfile</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-flask_plot_graph"><strong>flask_plot_graph</strong></a>()</dt><dd><tt>The&nbsp;webpage&nbsp;for&nbsp;the&nbsp;graphs&nbsp;<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;render&nbsp;of&nbsp;the&nbsp;graph-plots</tt></dd></dl>
+ <dl><dt><a name="-flask_plot_graph_json"><strong>flask_plot_graph_json</strong></a>()</dt><dd><tt>The&nbsp;graphs&nbsp;for&nbsp;all&nbsp;counties.&nbsp;This&nbsp;is&nbsp;shown&nbsp;when&nbsp;the&nbsp;website&nbsp;is&nbsp;opened.<br>
+Combines&nbsp;the&nbsp;three&nbsp;different&nbsp;types&nbsp;of&nbsp;graphs&nbsp;and&nbsp;convert&nbsp;the&nbsp;plot&nbsp;to&nbsp;json&nbsp;<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(str):&nbsp;string-representation&nbsp;of&nbsp;the&nbsp;graphs&nbsp;combined&nbsp;into&nbsp;one&nbsp;.json&nbsp;file</tt></dd></dl>
+ <dl><dt><a name="-flask_plot_graph_reselect"><strong>flask_plot_graph_reselect</strong></a>()</dt><dd><tt>The&nbsp;graphs&nbsp;for&nbsp;a&nbsp;selected&nbsp;county.<br>
+Combines&nbsp;the&nbsp;three&nbsp;different&nbsp;types&nbsp;of&nbsp;graphs&nbsp;and&nbsp;convert&nbsp;the&nbsp;plot&nbsp;to&nbsp;json&nbsp;<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(str):&nbsp;string-representation&nbsp;of&nbsp;the&nbsp;graphs&nbsp;combined&nbsp;into&nbsp;one&nbsp;.json&nbsp;file</tt></dd></dl>
+ <dl><dt><a name="-flask_plot_help"><strong>flask_plot_help</strong></a>()</dt><dd><tt>Generates&nbsp;a&nbsp;documentation&nbsp;page&nbsp;for&nbsp;the&nbsp;whole&nbsp;Python&nbsp;file&nbsp;with&nbsp;pydoc<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;render&nbsp;of&nbsp;the&nbsp;pydoc&nbsp;help-page</tt></dd></dl>
+ <dl><dt><a name="-flask_plot_map"><strong>flask_plot_map</strong></a>()</dt><dd><tt>The&nbsp;webpage&nbsp;for&nbsp;the&nbsp;map&nbsp;over&nbsp;Norway&nbsp;<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;render&nbsp;of&nbsp;the&nbsp;map-plot</tt></dd></dl>
+ <dl><dt><a name="-flask_plot_map_json"><strong>flask_plot_map_json</strong></a>()</dt><dd><tt>Turns&nbsp;the&nbsp;map&nbsp;into&nbsp;a&nbsp;.json&nbsp;file&nbsp;<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(str):&nbsp;string-representation&nbsp;of&nbsp;the&nbsp;map-plot&nbsp;as&nbsp;a&nbsp;.json&nbsp;file</tt></dd></dl>
+ <dl><dt><a name="-main"><strong>main</strong></a>(param)</dt><dd><tt>Main&nbsp;program&nbsp;where&nbsp;you&nbsp;either&nbsp;run&nbsp;a&nbsp;terminal-program&nbsp;(6.1),&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;a&nbsp;interactive&nbsp;virtualization&nbsp;on&nbsp;a&nbsp;website&nbsp;is&nbsp;created&nbsp;<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;param&nbsp;(list):&nbsp;list&nbsp;of&nbsp;the&nbsp;terminal&nbsp;arguments.&nbsp;If&nbsp;an&nbsp;argument&nbsp;is&nbsp;given,&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;terminal&nbsp;program&nbsp;for&nbsp;6.1&nbsp;will&nbsp;be&nbsp;run<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;chart&nbsp;(plot):&nbsp;The&nbsp;plot&nbsp;for&nbsp;either&nbsp;reported,&nbsp;cumulative&nbsp;or&nbsp;both&nbsp;combined.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;plot&nbsp;can&nbsp;both&nbsp;be&nbsp;county&nbsp;and&nbsp;time-restricted</tt></dd></dl>
+ <dl><dt><a name="-plot_both"><strong>plot_both</strong></a>(county, start=None, end=None)</dt><dd><tt>Plot&nbsp;both&nbsp;the&nbsp;line&nbsp;and&nbsp;bar&nbsp;graphs&nbsp;into&nbsp;one&nbsp;graph<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;county&nbsp;(str):&nbsp;Link&nbsp;for&nbsp;the&nbsp;county&nbsp;to&nbsp;plot&nbsp;cases&nbsp;for<br>
+&nbsp;&nbsp;&nbsp;&nbsp;start&nbsp;(str):&nbsp;Optional&nbsp;start-time&nbsp;to&nbsp;plot&nbsp;cases&nbsp;from&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end&nbsp;(str):&nbsp;Optional&nbsp;end-time&nbsp;to&nbsp;plot&nbsp;cases&nbsp;from<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;chart&nbsp;(plot):&nbsp;The&nbsp;combined&nbsp;plot&nbsp;over&nbsp;reported&nbsp;and&nbsp;cumulative&nbsp;cases</tt></dd></dl>
+ <dl><dt><a name="-plot_cumulative_cases"><strong>plot_cumulative_cases</strong></a>(county, start=None, end=None)</dt><dd><tt>Method&nbsp;to&nbsp;plot&nbsp;a&nbsp;line&nbsp;plot&nbsp;for&nbsp;cumulative&nbsp;cases&nbsp;of&nbsp;Covid-19&nbsp;in&nbsp;a&nbsp;county<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;county&nbsp;(str):&nbsp;Link&nbsp;for&nbsp;the&nbsp;county&nbsp;to&nbsp;plot&nbsp;cases&nbsp;for<br>
+&nbsp;&nbsp;&nbsp;&nbsp;start&nbsp;(str):&nbsp;Optional&nbsp;start-time&nbsp;to&nbsp;plot&nbsp;cases&nbsp;from&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end&nbsp;(str):&nbsp;Optional&nbsp;end-time&nbsp;to&nbsp;plot&nbsp;cases&nbsp;from<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;chart&nbsp;(plot):&nbsp;The&nbsp;plot&nbsp;over&nbsp;cumulative&nbsp;cases</tt></dd></dl>
+ <dl><dt><a name="-plot_norway"><strong>plot_norway</strong></a>(link)</dt><dd><tt>Plot&nbsp;a&nbsp;map&nbsp;over&nbsp;the&nbsp;norwegian&nbsp;counties&nbsp;and&nbsp;their&nbsp;amount&nbsp;of&nbsp;covid-19&nbsp;cases<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;link&nbsp;(str):&nbsp;Link&nbsp;for&nbsp;the&nbsp;amount&nbsp;of&nbsp;cases&nbsp;per&nbsp;county<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;chart&nbsp;(plot):&nbsp;The&nbsp;interactive&nbsp;map&nbsp;over&nbsp;norwegian&nbsp;counties</tt></dd></dl>
+ <dl><dt><a name="-plot_reported_cases"><strong>plot_reported_cases</strong></a>(county, start=None, end=None)</dt><dd><tt>Method&nbsp;to&nbsp;plot&nbsp;a&nbsp;bar&nbsp;plot&nbsp;for&nbsp;reported&nbsp;Covid-19&nbsp;cases&nbsp;in&nbsp;a&nbsp;county<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;county&nbsp;(str):&nbsp;Link&nbsp;for&nbsp;the&nbsp;county&nbsp;to&nbsp;plot&nbsp;cases&nbsp;for<br>
+&nbsp;&nbsp;&nbsp;&nbsp;start&nbsp;(str):&nbsp;Optional&nbsp;start-time&nbsp;to&nbsp;plot&nbsp;cases&nbsp;from&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end&nbsp;(str):&nbsp;Optional&nbsp;end-time&nbsp;to&nbsp;plot&nbsp;cases&nbsp;from<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;chart&nbsp;(plot):&nbsp;The&nbsp;plot&nbsp;over&nbsp;reported&nbsp;cases</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>app</strong> = &lt;Flask 'web_visualization'&gt;<br>
+<strong>request</strong> = &lt;Request 'http://127.0.0.1:5000/help' [GET]&gt;</td></tr></table>
+</body></html>
